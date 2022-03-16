@@ -6,6 +6,7 @@
     <title>Ma super Calculatrice</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -83,26 +84,5 @@
         </table>
     </form>
 </body>
-<script type="text/javascript">
-    var operation = "";
-    var resultado = "";
-    $(document).ready(function () {
-        $('.num').click(function () {
-
-            var valeur = $(this).val();
-            operation += valeur
-            $('#valores').val(operation);
-        });
-        $('#calcular').click(function () {
-            resultado = eval($('#valores').val());
-            $("#resultat").val($('#valores').val() + "=" + resultado)
-
-        });
-        $('#suppr').click(function () {
-            $("#valores").val(operation ="");
-            $("#resultat").val(resultado ="");
-        });
-    });
-</script>
 
 </html>
