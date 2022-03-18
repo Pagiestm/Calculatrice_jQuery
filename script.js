@@ -7,7 +7,7 @@ var operation = "";
             operation += valeur
             $('#valeur').val(operation);
         });
-        $('#calcular').click(function () {
+        $('#calcul').click(function () {
             resultado = eval($('#valeur').val());
             $("#resultat").val($('#valeur').val() + "=" + resultado)
 
