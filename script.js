@@ -5,15 +5,15 @@ var operation = "";
 
             var valeur = $(this).val();
             operation += valeur
-            $('#valores').val(operation);
+            $('#valeur').val(operation);
         });
         $('#calcular').click(function () {
-            resultado = eval($('#valores').val());
-            $("#resultat").val($('#valores').val() + "=" + resultado)
+            resultado = eval($('#valeur').val());
+            $("#resultat").val($('#valeur').val() + "=" + resultado)
 
         });
         $('#suppr').click(function () {
-            $("#valores").val(operation ="");
+            $("#valeur").val(operation ="");
             $("#resultat").val(resultado ="");
         });
     });
