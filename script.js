@@ -1,5 +1,5 @@
 var operation = "";
-    var resultado = "";
+    var resultat = "";
     $(document).ready(function () {
         $('.num').click(function () {
 
@@ -8,12 +8,12 @@ var operation = "";
             $('#valeur').val(operation);
         });
         $('#calcul').click(function () {
-            resultado = eval($('#valeur').val());
-            $("#resultat").val($('#valeur').val() + "=" + resultado)
+            resultat = eval($('#valeur').val());
+            $("#resultat").val($('#valeur').val() + "=" + resultat)
 
         });
-        $('#suppr').click(function () {
+        $('#supprimer').click(function () {
             $("#valeur").val(operation ="");
-            $("#resultat").val(resultado ="");
+            $("#resultat").val(resultat ="");
         });
     });
